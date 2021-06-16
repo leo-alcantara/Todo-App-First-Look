@@ -38,7 +38,6 @@ Instructions
     and make sure that the project uses java 8 + and JUnit 4.12 +.
     e. Run your program and make sure it compiles.
     f. Push the empty project to GitHub.
-    a maven project
 
 2. Create a new package called model.
 
@@ -66,7 +65,7 @@ Instructions
     d. Unit test PersonSequencer with Junit.
     e. Commit changes.
 
-7. Create a new class called a new class TodoSequencer in data package that have the same behaviour as
+7. Create a new class called TodoSequencer in data package that have the same behaviour as
 PersonSequencer but different names.
     a. Unit test TodoSequencer with Junit.
     b. Commit changes.
