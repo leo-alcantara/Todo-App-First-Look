@@ -41,6 +41,7 @@ Instructions
 
 2. Create a new package called model.
 
+LEO
 3. Create Person class in package model.
     a. Required fields are personId (int and final), firstName and lastName (String).
     b. Make a constructor that can build the object.
@@ -48,6 +49,8 @@ Instructions
     d. Unit test with Junit.
     e. Commit changes.
 
+
+ABBE
 4. Create Todo class in the model package
     a. Required fields are todoId (int and final), description (String), done
     (boolean) and assignee (Person).
@@ -58,6 +61,7 @@ Instructions
 
 5. Create a package called data.
 
+LEO
 6. Create a new class PersonSequencer in data package.
     a. In PersonSequencer create a private static int variable called personId.
     b. Add a static method called nextPersonId that increment and return the next personid value.
@@ -65,11 +69,16 @@ Instructions
     d. Unit test PersonSequencer with Junit.
     e. Commit changes.
 
+ABBE
 7. Create a new class called TodoSequencer in data package that have the same behaviour as
 PersonSequencer but different names.
-    a. Unit test TodoSequencer with Junit.
-    b. Commit changes.
+    a. In PersonSequencer create a private static int variable called personId.
+    b. Add a static method called nextPersonId that increment and return the next personid value.
+    c. Add a static method called reset() that sets the personId variable to 0.
+    e. Unit test TodoSequencer with Junit.
+    e. Commit changes.
 
+ABBE LEO
 8. Create a new class called People inside the data package.
     a. Have a private static Person array declared and instantiated as empty
     and not null (new Person[0]).
@@ -86,12 +95,14 @@ PersonSequencer but different names.
     g. Unit test People class with Junit.
     h. Commit changes.
 
+ABBE LEO
 9. Create a new class called TodoItems inside the data package.
     a. TodoItems should have the same functionality as the People class but tailored
     for TodoItems.
     b. Unit test TodoItems class.
     c. Commit changes.
 
+ABBE LEO
 10. Add the following methods to TodoItems class
     a. public Todo[] findByDoneStatus(boolean doneStatus)
         - Returns array with objects that has a matching done status.
@@ -104,6 +115,7 @@ PersonSequencer but different names.
     e. Unit test changes.
     f. Commit.
 
+ABBE LEO
 11. Add the following to TodoItems & People class.
     a. Functionality to remove object from array. (not nulling)
         First: you need to find the correct array index of the object.
