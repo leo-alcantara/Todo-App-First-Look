@@ -2,7 +2,7 @@ package se.lexicon.abbeleo.model;
 
 public class Todo {
 
-    private final int todoId;
+    private final int TODOID;
     private String description;
     private boolean done;
     private Person assignee;
@@ -11,14 +11,14 @@ public class Todo {
 
     public Todo(int todoId, String description){
 
-        this.todoId = todoId;
+        this.TODOID = todoId;
         this.description = description;
     }
 
 
 
     public int getTodoId() {
-        return todoId;
+        return TODOID;
     }
 
     public String getDescription() {
