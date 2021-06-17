@@ -2,9 +2,10 @@ package se.lexicon.abbeleo.model;
 
 public class Person {
 
-    public int personId;
+
     public String firstName;
     public String lastName;
+    private final int PERSONID = 0;
 
     public Person (String firstName, String lastName){
         this.firstName = firstName;
@@ -12,12 +13,12 @@ public class Person {
     }
 
     public int getPersonId() {
-        return personId;
+        return PERSONID;
     }
 
-    public void setPersonId(int personId) {
-        this.personId = personId;
-    }
+    /*public void setPersonId(int personId) {
+        this.PERSONID = personId;
+    }*/
 
     public String getFirstName() {
         return firstName;
