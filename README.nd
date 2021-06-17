@@ -69,7 +69,7 @@ LEO Done
     d. Unit test PersonSequencer with Junit.
     e. Commit changes.
 
-ABBE
+ABBE Done
 7. Create a new class called TodoSequencer in data package that have the same behaviour as
 PersonSequencer but different names.
     a. In PersonSequencer create a private static int variable called personId.

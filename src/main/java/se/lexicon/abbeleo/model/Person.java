@@ -1,24 +1,23 @@
 package se.lexicon.abbeleo.model;
 
+import se.lexicon.abbeleo.data.PersonSequencer;
+
 public class Person {
 
 
     public String firstName;
     public String lastName;
-    private final int PERSONID = 0;
+    private final int PERSONID;
 
     public Person (String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
+        this.PERSONID = PersonSequencer.nextPersonId();
     }
 
     public int getPersonId() {
         return PERSONID;
     }
-
-    /*public void setPersonId(int personId) {
-        this.PERSONID = personId;
-    }*/
 
     public String getFirstName() {
         return firstName;

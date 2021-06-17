@@ -6,7 +6,6 @@ import java.util.Arrays;
 
 public class People {
 
-    private static final int PERSONID = 0;
     private static Person[] personArray = {};
 
     public int size() {
@@ -19,13 +18,13 @@ public class People {
     }
 
     public Person findById(int personId) {
-        for (Person person:
+        for (Person p:
              personArray) {
-            if (PERSONID == personId) {
-                return person;
+            if (p.getPersonId() == personId) {
+                return p;
             }
         }
-       return null; //Needs to change
+       return null;
     }
 
     public Person createNewPerson(String firstName, String lastName) {
