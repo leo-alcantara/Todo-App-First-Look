@@ -95,6 +95,16 @@ public class TodoItems {
         return null;
     }
 
+    public static boolean remove (Todo todoName) {
+        for (int i = 0; i < todoArray.length; i++) {
+            if (todoArray[i].equals(todoName)) {
+                todoArray[i] = todoArray[todoArray.length - 1];
+                todoArray = Arrays.copyOf(todoArray, todoArray.length - 1);
+                break;
+            }
+        }
+        return true;
+    }
 
 
 

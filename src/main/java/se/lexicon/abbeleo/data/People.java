@@ -1,6 +1,7 @@
 package se.lexicon.abbeleo.data;
 
 import se.lexicon.abbeleo.model.Person;
+import se.lexicon.abbeleo.model.Todo;
 
 import java.util.Arrays;
 
@@ -38,6 +39,17 @@ public class People {
 
     public void clear() {
         personArray = Arrays.copyOf(personArray, 0);
+    }
+
+    public static boolean remove (Person personName) {
+        for (int i = 0; i < personArray.length; i++) {
+            if (personArray[i].equals(personName)) {
+                personArray[i] = personArray[personArray.length - 1];
+                personArray = Arrays.copyOf(personArray, personArray.length - 1);
+                break;
+            }
+        }
+        return true;
     }
 
 
