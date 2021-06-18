@@ -12,7 +12,7 @@ public class Todo {
     public Todo(int todoId, String description){
 
         this.TODOID = todoId;
-        this.description = description;
+        this.description = description; //Need to review
     }
 
 

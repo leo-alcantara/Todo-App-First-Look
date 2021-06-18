@@ -85,11 +85,9 @@ public class TodoItems {
     public Todo[] findUnassignedTodoItems() {
         Todo[] unassignedTodo = new Todo[0];
         for (Todo todo : todoArray) {
-            if (todo.getAssignee().equals(false) ) {
+            if (todo.getAssignee().equals(null) ) {
                 unassignedTodo = Arrays.copyOf(unassignedTodo, unassignedTodo.length + 1);
                 unassignedTodo[unassignedTodo.length - 1] = todo;
-            } else {
-                break;
             }
         }
         return null;

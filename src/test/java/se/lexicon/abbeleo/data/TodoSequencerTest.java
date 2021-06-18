@@ -11,11 +11,11 @@ public class TodoSequencerTest {
 
         //Arrange
         int todoId;
-        int sequencer = 0;
+
         //Act
-        todoId = sequencer;
+        todoId = TodoSequencer.nextTodoId();
         //Assert
-        assertEquals(todoId, sequencer);
+        assertEquals(+ 1, todoId);
 
     }
 
@@ -26,9 +26,9 @@ public class TodoSequencerTest {
         int todoId = 20;
         //int sequencer = 0;
         //Act
-        //todoId = 0;
+        todoId = TodoSequencer.reset();
         //Assert
-        assertEquals(0, TodoSequencer.reset());
+        assertEquals(0, todoId);
 
     }
 }

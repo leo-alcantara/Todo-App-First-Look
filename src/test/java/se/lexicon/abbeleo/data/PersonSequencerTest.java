@@ -11,23 +11,24 @@ public class PersonSequencerTest {
     public void nextPersonId() {
 
         //Arrange
-        int personId;
-        int sequencer = 0;
+        int nextPerson;
+
         //Act
-        personId = sequencer;
+        nextPerson= PersonSequencer.nextPersonId();
+
         //Assert
-        assertEquals(personId, sequencer);
+        assertEquals(+ 1, nextPerson);
     }
 
     @Test
     public void reset() {
 
         //Arrange
-        int personId;
-        int sequencer = 0;
+        int personId = 20;
+        //int sequencer = 0;
         //Act
-        personId = sequencer;
+        personId = PersonSequencer.reset();
         //Assert
-        assertEquals(personId, sequencer);
+        assertEquals(0, personId);
     }
 }
