@@ -19,7 +19,7 @@ public class PersonSequencerTest {
         nextPersonId = sequencerIncremented;
 
         //Assert
-        assertEquals(nextPersonId, sequencerIncremented);
+        assertEquals(sequencerIncremented, nextPersonId);
     }
 
     @Test

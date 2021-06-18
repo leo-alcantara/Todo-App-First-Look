@@ -27,7 +27,7 @@ public class TodoItems {
                 return todo;
             }
         }
-        return null; //Needs to change
+        return null;
     }
 
     public Todo createNewTodo(int TODOID, String description) {
