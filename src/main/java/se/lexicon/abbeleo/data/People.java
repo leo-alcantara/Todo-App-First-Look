@@ -52,6 +52,10 @@ public class People {
         return true;
     }
 
+    public static int getSize(Person[] arrayName) {
+
+        return arrayName.length;
+    }
 
 }
 
