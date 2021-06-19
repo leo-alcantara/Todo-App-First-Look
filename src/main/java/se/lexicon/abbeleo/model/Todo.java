@@ -1,5 +1,7 @@
 package se.lexicon.abbeleo.model;
 
+import se.lexicon.abbeleo.data.TodoSequencer;
+
 public class Todo {
 
     private final int TODOID;

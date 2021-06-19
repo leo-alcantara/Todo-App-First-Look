@@ -9,6 +9,7 @@ public class People {
 
     private static Person[] personArray = {};
 
+
     public int size() {
         return personArray.length;
     }
@@ -19,13 +20,13 @@ public class People {
     }
 
     public Person findById(int personId) {
-        for (Person p:
-             personArray) {
+        for (Person p :
+                personArray) {
             if (p.getPersonId() == personId) {
                 return p;
             }
         }
-       return null;
+        return null;
     }
 
     public Person createNewPerson(String firstName, String lastName) {
@@ -41,21 +42,18 @@ public class People {
         personArray = Arrays.copyOf(personArray, 0);
     }
 
-    public static boolean remove (Person personName) {
+    public void remove(Person person) {
+        Person[] newPersonArray = {};
         for (int i = 0; i < personArray.length; i++) {
-            if (personArray[i].equals(personName)) {
-                personArray[i] = personArray[personArray.length - 1];
-                personArray = Arrays.copyOf(personArray, personArray.length - 1);
-                break;
+            if (!personArray[i].equals(person)) {
+                newPersonArray = Arrays.copyOf(newPersonArray, newPersonArray.length + 1);
+                newPersonArray[newPersonArray.length - 1] = personArray[i];
             }
         }
-        return true;
+
+        personArray = newPersonArray;
     }
 
-    public static int getSize(Person[] arrayName) {
-
-        return arrayName.length;
-    }
 
 }
 

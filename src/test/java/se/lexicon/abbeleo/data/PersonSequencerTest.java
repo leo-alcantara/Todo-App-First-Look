@@ -11,13 +11,13 @@ public class PersonSequencerTest {
     public void nextPersonId() {
 
         //Arrange
-        int nextPerson;
+        int nextPersonId;
 
         //Act
-        nextPerson= PersonSequencer.nextPersonId();
+        nextPersonId = PersonSequencer.nextPersonId();
 
         //Assert
-        assertEquals(+ 1, nextPerson);
+        assertEquals(+ 1, nextPersonId);
     }
 
     @Test
