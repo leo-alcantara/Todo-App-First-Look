@@ -4,10 +4,10 @@ public class PersonSequencer {
 
     private static int personId;
 
+    private static int sequencer = 0;
+
     public static int nextPersonId(){
-        int sequencer = 0;
-        personId = ++sequencer;
-        return personId;
+        return ++sequencer;
     }
 
     public static int reset(){
